@@ -17,3 +17,5 @@ export const invoices: Invoice[] = [
         date: '2022-11-14',
     },
 ];
+
+export const WebLayout: string = 'xl:px-20 lg:px-15 md:px-10 px-5'
