@@ -2,13 +2,14 @@
 
 import { Theme } from "@/libs/theme"
 import Image from "next/image"
+import Link from "next/link"
 import React from "react"
 
 const NavBar = () => {
   return (
     <div className='navbar bg-base-100'>
       <div className='flex-1'>
-        <a className='btn btn-ghost text-xl'>daisyUI</a>
+        <Link href={'/'} className='text-xl'>Lesson - 03</Link>
       </div>
       <div className='flex-none gap-2'>
         <div className='form-control'>
@@ -23,23 +24,23 @@ const NavBar = () => {
             tabIndex={0}
             role='button'
             className='btn btn-ghost btn-circle avatar'>
-            {/* <div className='w-10 rounded-full'>
+            <div className='w-10 rounded-full'>
               <Image
                 alt='Tailwind CSS Navbar component'
-                src='https://images.pexels.com/photos/27603834/pexels-photo-27603834/free-photo-of-ao-dai.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                src={'/free-photo-of-ao-dai.jpeg'}
                 width={100}
                 height={100}
               />
-            </div> */}
+            </div>
           </div>
           <ul
             tabIndex={0}
             className='menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow'>
             <li>
-              <a className='justify-between'>
+              <Link href={'/profile'} className='justify-between'>
                 Profile
                 <span className='badge'>New</span>
-              </a>
+              </Link>
             </li>
             <li>
               <a>Settings</a>

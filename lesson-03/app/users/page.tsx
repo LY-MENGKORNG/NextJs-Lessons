@@ -1,8 +1,15 @@
-import React from 'react'
+"use client"
+import { CustomBtn } from "@/components/client"
+import React from "react"
 
 const UserPage = () => {
   return (
-    <div>UserPage</div>
+    <div>
+      <CustomBtn
+        title='hello world'
+        handleClick={() => {}}
+      />
+    </div>
   )
 }
 
